@@ -1,3 +1,8 @@
 ul li span{
   color: blue;
+  text-decoration: none;
+}
+
+ul li span:hover{
+  text-decoration: underline;
 }

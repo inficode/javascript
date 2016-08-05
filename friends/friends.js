@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
     localStorage.friends_list = $("#friends-list").html();
   });
-
+  
   $(".remove").click(function(event){
     $(this).parent().remove();
     localStorage.friends_list = $("#friends-list").html();
