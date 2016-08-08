@@ -1,0 +1,16 @@
+ul li span.remove{
+  color: blue;
+  text-decoration: none;
+}
+
+ul li span.remove:hover{
+  text-decoration: underline;
+}
+
+.strike{
+  text-decoration:line-through;
+}
+
+.unstrike{
+  text-decoration: none;
+}
