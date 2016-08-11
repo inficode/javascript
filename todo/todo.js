@@ -1,8 +1,10 @@
 function mark_done_or_undone(element){
   if ($(element).is(":checked"))    {
     $(element).siblings("span").addClass("strike");
+    $(element).attr("checked", "true");
   }else{
     $(element).siblings("span").removeClass("strike");
+    $(element).removeAttr("checked");
   }
   localStorage.todo_list = $("#friends-list").html();
 }
@@ -33,5 +35,7 @@ $(document).ready(function(){
   $(".checked").change(function(event){
     mark_done_or_undone(this);
   });
+
+  // $("span.strike").siblings(".checked").attr("checked", "true");
 
 });
