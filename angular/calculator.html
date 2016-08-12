@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+    </script>
+  </head>
+  <body ng-app="">
+    <div>
+      <label>Num 1</label><input type="number" ng-model="num1" ng-init="num1 = 0" />
+    </div>
+    <div>
+      <label>Num 1</label><input type="number" ng-model="num2" ng-init="num2 = 0" />
+    </div>
+
+    <div>
+      <p>
+        {{num1 + "+" + num2 + "=" }} {{ num1 + num2 }}
+      </p>
+      <p>
+        {{num1 + "-" + num2 + "=" }} {{ num1 - num2 }}
+      </p>
+      <p>
+        {{num1 + "*" + num2 + "=" }} {{ num1 * num2 }}
+      </p>
+      <p>
+        {{num1 + "/" + num2 + "=" }} {{ num1 / num2 }}
+      </p>
+    </div>
+  </body>
+</html>

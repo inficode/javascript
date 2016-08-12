@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+    </script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <p ng-bind="someval"></p><br />
+      <button ng-click="val_change()">CLICK</button>
+    </div>
+
+    <script>
+      var app = angular.module("myApp", []);
+      app.controller("myCtrl", function($scope) {
+          $scope.someval = "Some Value";
+          $scope.val_change = function(){
+              $scope.someval = "Changed!";
+          };
+      });
+    </script>
+  </body>
+</html>

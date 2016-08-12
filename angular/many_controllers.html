@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+    </script>
+  </head>
+  <body>
+    <div ng-app="myApp">
+      <div  ng-controller="myCtrl">
+        {{ firstName + " " + lastName }}
+      </div>
+
+      <div ng-controller="myCtrl2">
+        {{ firstName + " " + lastName }}
+      </div>
+    </div>
+
+    <script>
+      var app = angular.module("myApp", []);
+
+      app.controller("myCtrl", function($scope) {
+          $scope.firstName = "John";
+          $scope.lastName = "Doe";
+      });
+
+      app.controller("myCtrl2", function($scope) {
+          $scope.firstName = "Rambo";
+          $scope.lastName = "Ramasamy";
+      });
+    </script>
+  </body>
+</html>

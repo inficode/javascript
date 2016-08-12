@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+    </script>
+  </head>
+  <body ng-app="myApp">
+    <ul ng-controller="myCtrl">
+      <li ng-repeat="x in people">{{x.name}} is from {{x.city}}</li>
+    </ul>
+    <script>
+    var app = angular.module("myApp", []);
+    app.controller("myCtrl", function($scope) {
+        $scope.people = [
+          {"name": "abc", "city": "chennai" },
+          {"name": "def", "city": "banglore" }
+        ];
+    });
+    </script>
+  </body>
+</html>
