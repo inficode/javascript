@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js">
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body ng-app="">
+    <p>Try writing in the input field:</p>
+
+    <form name="myForm">
+      <input type="email" name="myInput" ng-model="myInput" /><br />
+      <label>untouched:<label> {{myForm.myInput.$untouched}}<br />
+      <label>touched:<label> {{myForm.myInput.$touched}}<br />
+      <label>pristine:<label> {{myForm.myInput.$pristine}}<br />
+      <label>dirty:<label> {{myForm.myInput.$dirty}}<br />
+      <label>invalid:<label> {{myForm.myInput.$invalid}}<br />
+      <label>valid:<label> {{myForm.myInput.$valid}}<br />
+  </form>
+  </body>
+</html>
